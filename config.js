@@ -14,9 +14,9 @@ const moduleCache = new NodeCache({ stdTTL: 300 });
 global.owner = [
   ['393762257368', 'jack', true],
   ['12368910153', 'slyce', true],
-  ['212775970841', 'bot', true],
-  ['xxxxxxxxxx', 'xxxxx', true],
-  ['xxxxxxxxxx', 'xxxxx', true],
+  ['', '', true],
+  ['', '', true],
+  ['', '', true],
 ]
 global.mods = ['xxxxxxxxxx', 'xxxxxxxxxx']
 global.prems = ['xxxxxxxxxx', 'xxxxxxxxxx']
