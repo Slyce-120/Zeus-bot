@@ -176,7 +176,7 @@ async function punishUser(conn, m, user, isBotAdmin, reason) {
 *⚠️ ${reason}*
 *📌 𝐀𝐯𝐯𝐢𝐬𝐨:* *${user.warn}/3*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [m.sender]
     }, { quoted: m })
 
@@ -212,7 +212,7 @@ async function punishUser(conn, m, user, isBotAdmin, reason) {
 *🚷 𝐑𝐢𝐦𝐨𝐬𝐬𝐨 𝐝𝐚𝐥 𝐠𝐫𝐮𝐩𝐩𝐨*
 *📌 𝐌𝐨𝐭𝐢𝐯𝐨:* *𝐂𝐨𝐧𝐭𝐞𝐧𝐮𝐭𝐢 𝐍𝐒𝐅𝐖 / 𝐩𝐨𝐫𝐧𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
     mentions: [m.sender]
   }, { quoted: m })
 
