@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
     let staff = `*⋆｡˚✦『 𝐒𝐓𝐀𝐅𝐅 ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 』✦˚｡⋆*
 
 *╭───────────────╮*
-*│ 🤖 𝐁𝐨𝐭:* ${global.nomebot}
+*│ 🤖 𝐁𝐨𝐭:* ${global.ℤ𝕖𝕦𝕤}
 *│ 🆚 𝐕𝐞𝐫𝐬𝐢𝐨𝐧𝐞:* ${global.versione}
 *╰───────────────╯*
 
@@ -46,7 +46,7 @@ let handler = async (m, { conn }) => {
                 {
                     vcard: `BEGIN:VCARD
 VERSION:3.0
-FN:Deadly
+FN:Slyce
 ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Creatore / Dev
 TEL;type=CELL;type=VOICE;waid=393762257368:393762257368
 END:VCARD`
