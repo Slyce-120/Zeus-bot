@@ -16,9 +16,9 @@ const handler = async (m, { conn }) => {
   }
 };
 
-handler.help = ['𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'];
+handler.help = ['ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'];
 handler.tags = ['group'];
-handler.command = /^zeus$/i;  
+handler.command = /^god$/i;  
 handler.group = true;  
 handler.owner = true;  
 handler.botAdmin = true; 
