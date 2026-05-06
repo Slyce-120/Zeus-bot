@@ -179,7 +179,7 @@ let handler = async (m, { conn, command, args, isAdmin, isOwner, isROwner, usedP
 
   result += `
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   const thumbnail = await getThumbBuffer(thumbFeature)
 
