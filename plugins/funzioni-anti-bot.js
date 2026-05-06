@@ -60,7 +60,7 @@ export async function before(m, { conn, isOwner, isROwner }) {
 *📱 𝐃𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨:* *${device.toUpperCase()}*
 *⬇️ 𝐋'𝐮𝐭𝐞𝐧𝐭𝐞 è 𝐬𝐭𝐚𝐭𝐨 𝐫𝐞𝐭𝐫𝐨𝐜𝐞𝐬𝐬𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
         mentions: [m.sender]
       }, { quoted: m })
     } catch (e) {
@@ -97,7 +97,7 @@ export async function before(m, { conn, isOwner, isROwner }) {
 *📱 𝐃𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨:* *${device.toUpperCase()}*
 *❌ 𝐍𝐨𝐧 𝐬𝐨𝐧𝐨 𝐫𝐢𝐮𝐬𝐜𝐢𝐭𝐨 𝐚 𝐫𝐢𝐦𝐮𝐨𝐯𝐞𝐫𝐥𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [m.sender]
     }, { quoted: m })
   }
