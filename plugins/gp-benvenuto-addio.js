@@ -43,7 +43,7 @@ handler.before = async function (m, { conn, groupMetadata }) {
 
 *𝐁𝐮𝐨𝐧𝐚 𝐩𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐳𝐚!* ✨
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
   }
 
   if (isRemove && chat.goodbye) {
@@ -57,7 +57,7 @@ handler.before = async function (m, { conn, groupMetadata }) {
 
     text += `
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
   }
 
   if (!text) return false
