@@ -1,21 +1,21 @@
 {
-  "name": "axionbot",
+  "name": "zeusbot",
   "version": "1.5.0",
-  "description": "Bot zozzap by deadly",
+  "description": "Bot zozzap by zeus",
   "main": "main.js",
   "type": "module",
   "license": "Apache-2.0",
   "author": {
-    "name": "axion",
-    "url": "https://github.com/axion-bot"
+    "name": "zeus",
+    "url": "https://github.com/Slyce-120/Zeus-bot.git"
   },
-  "homepage": "https://github.com/axion-bot/axion-bot-Md",
+  "homepage": "https://github.com/Slyce-120/Zeus-bot.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axion-bot/axion-bot-Md.git"
+    "url": "git+https://github.com/Slyce-120/Zeus-bot.git"
   },
   "bugs": {
-    "url": "git+https://github.com/axion-bot/axion-bot-Md/issues"
+    "url": "git+https://github.com/Slyce-120/Zeus-bot.git"
   },
   "keywords": [
     "whatsapp",
