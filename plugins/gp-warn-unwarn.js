@@ -152,7 +152,7 @@ if (text) {
 *🚫 𝐋’𝐮𝐭𝐞𝐧𝐭𝐞 𝐞̀ 𝐬𝐭𝐚𝐭𝐨 𝐫𝐢𝐦𝐨𝐬𝐬𝐨 𝐝𝐚𝐥 𝐠𝐫𝐮𝐩𝐩𝐨.*`
         ),
         mentions: [displayJid],
-        footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+        footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
         buttons: [
           { buttonId: `${usedPrefix}listawarn`, buttonText: { displayText: '📋 Lista Warn' }, type: 1 }
         ],
@@ -172,7 +172,7 @@ if (text) {
 *⚠️ 𝐀𝐥 𝐭𝐞𝐫𝐳𝐨 𝐰𝐚𝐫𝐧 𝐥’𝐮𝐭𝐞𝐧𝐭𝐞 𝐯𝐞𝐫𝐫𝐚̀ 𝐫𝐢𝐦𝐨𝐬𝐬𝐨 𝐝𝐚𝐥 𝐠𝐫𝐮𝐩𝐩𝐨.*`
       ),
       mentions: [displayJid],
-      footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+      footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
       buttons: warnButtons(realKey),
       headerType: 1
     }, { quoted: m })
@@ -198,7 +198,7 @@ if (text) {
 *📊 𝐒𝐭𝐚𝐭𝐨:* *${user.warn}/𝟑 𝐰𝐚𝐫𝐧*`
       ),
      mentions: [displayJid],
-      footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+      footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
       buttons: unwarnButtons(realKey),
       headerType: 1
     }, { quoted: m })
