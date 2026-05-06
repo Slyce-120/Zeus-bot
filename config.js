@@ -12,7 +12,7 @@ const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf-8'))
 const moduleCache = new NodeCache({ stdTTL: 300 });
 
 global.owner = [
-  ['393780306700', '𝕯𝖊ⱥ𝖉𝖑𝐲', true],
+  ['393762257368', 'ℨ𝔢𝔲𝔰', true],
   ['393780560229', 'Luxifer', true],
   ['639350468907', 'bonzino', true],
   ['393780087063', 'bonzino²', true],
