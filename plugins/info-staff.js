@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-    let staff = `*⋆｡˚✦『 𝐒𝐓𝐀𝐅𝐅 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓 』✦˚｡⋆*
+    let staff = `*⋆｡˚✦『 𝐒𝐓𝐀𝐅𝐅 ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 』✦˚｡⋆*
 
 *╭───────────────╮*
 *│ 🤖 𝐁𝐨𝐭:* ${global.nomebot}
@@ -20,10 +20,10 @@ let handler = async (m, { conn }) => {
 
 *╭─── 📌 𝐈𝐍𝐅𝐎 𝐔𝐓𝐈𝐋𝐈 ───╮*
 *│ ✦ 𝐆𝐢𝐭𝐇𝐮𝐛:* github.com/axion-bot
-*│ ✦ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐨:* @393509594333
+*│ ✦ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐨:* @393762257368
 *╰────────────────────╯*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
     await conn.reply(
         m.chat,
@@ -32,10 +32,9 @@ let handler = async (m, { conn }) => {
         {
             contextInfo: {
                 mentionedJid: [
-                    '393780306700@s.whatsapp.net',
-                    '212781816909@s.whatsapp.net',
-                    '639350468907@s.whatsapp.net',
-                    '393509594333@s.whatsapp.net'
+                    '393762257368@s.whatsapp.net',
+                    '12368910153@s.whatsapp.net',
+                    
                 ]
             }
         }
@@ -48,7 +47,7 @@ let handler = async (m, { conn }) => {
                     vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:Deadly
-ORG:𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓 - Creatore / Dev
+ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Creatore / Dev
 TEL;type=CELL;type=VOICE;waid=393780306700:393780306700
 END:VCARD`
                 },
@@ -56,7 +55,7 @@ END:VCARD`
                     vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:Bonzino
-ORG:𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓 - Co-Owner
+ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Co-Owner
 TEL;type=CELL;type=VOICE;waid=639350468907:+639350468907
 END:VCARD`
                 },
@@ -64,7 +63,7 @@ END:VCARD`
                     vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:Luxifer
-ORG:𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓 - Staffer
+ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Staffer
 TEL;type=CELL;type=VOICE;waid=212781816909:+212781816909
 END:VCARD`
                 }
