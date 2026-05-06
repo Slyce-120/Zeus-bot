@@ -30,8 +30,8 @@ global.versione  = pkg.version
 global.testobot  = ZEUS-CORE-V${pkg.version}`
 global.errore    = '⚠️ *[SYSTEM ERROR]* Usa `.segnala` per inviare il log allo staff.'
 
-global.repobot   = 'https://github.com/axion-bot/axion-bot'
-global.canale    = 'https://whatsapp.com/channel/0029Vb8MQ3U1CYoMEtU1832d'
+global.repobot   = 'https://github.com/Slyce-120/Zeus-bot.git'
+global.canale    = 'non disponibile'
 
 global.cheerio   = cheerio
 global.fs        = fs
