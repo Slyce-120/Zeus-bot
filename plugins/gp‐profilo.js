@@ -78,7 +78,7 @@ let handler = async (m, { conn }) => {
 
   await conn.sendMessage(m.chat, {
     text: '*𝐒𝐄𝐋𝐄𝐙𝐈𝐎𝐍𝐀 𝐔𝐍’𝐎𝐏𝐙𝐈𝐎𝐍𝐄:*',
-    footer: '> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*',
+    footer: '> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*',
     buttons: [
       {
         buttonId: '.wallet',
