@@ -81,7 +81,7 @@ handler.before = async function (m, { conn, isAdmin, isPrems, isBotAdmin, isOwne
 *⚠️ 𝐇𝐚 𝐫𝐚𝐠𝐠𝐢𝐮𝐧𝐭𝐨 𝟑/𝟑 𝐚𝐯𝐯𝐢𝐬𝐢*
 *❌ 𝐍𝐨𝐧 𝐩𝐨𝐬𝐬𝐨 𝐫𝐢𝐦𝐮𝐨𝐯𝐞𝐫𝐥𝐨: 𝐢𝐥 𝐛𝐨𝐭 𝐧𝐨𝐧 è 𝐚𝐝𝐦𝐢𝐧*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [userJid]
     }, { quoted: m })
 
@@ -100,7 +100,7 @@ handler.before = async function (m, { conn, isAdmin, isPrems, isBotAdmin, isOwne
 *🚷 𝐑𝐢𝐦𝐨𝐬𝐬𝐨 𝐝𝐚𝐥 𝐠𝐫𝐮𝐩𝐩𝐨*
 *📌 𝐌𝐨𝐭𝐢𝐯𝐨:* *𝐓𝐚𝐠 𝐞𝐜𝐜𝐞𝐬𝐬𝐢𝐯𝐢*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [userJid]
     }, { quoted: m })
   } catch {
@@ -112,7 +112,7 @@ handler.before = async function (m, { conn, isAdmin, isPrems, isBotAdmin, isOwne
 *@${senderTag}*
 *⚠️ 𝐃𝐨𝐯𝐫𝐞𝐛𝐛𝐞 𝐞𝐬𝐬𝐞𝐫𝐞 𝐫𝐢𝐦𝐨𝐬𝐬𝐨, 𝐦𝐚 𝐢𝐥 𝐛𝐨𝐭 𝐧𝐨𝐧 è 𝐫𝐢𝐮𝐬𝐜𝐢𝐭𝐨 𝐚 𝐟𝐚𝐫𝐥𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [userJid]
     }, { quoted: m })
   }
