@@ -58,7 +58,7 @@ ${body}`
         '𝐑𝐄𝐒𝐄𝐓 𝐖𝐀𝐑𝐍',
         `*𝐍𝐞𝐬𝐬𝐮𝐧 𝐰𝐚𝐫𝐧 𝐝𝐚 𝐚𝐳𝐳𝐞𝐫𝐚𝐫𝐞 𝐢𝐧 𝐪𝐮𝐞𝐬𝐭𝐨 𝐠𝐫𝐮𝐩𝐩𝐨.*`
       ),
-      footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+      footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
       buttons: [
         { buttonId: `${usedPrefix}listawarn`, buttonText: { displayText: '📋 Lista Warn' }, type: 1 }
       ],
@@ -76,7 +76,7 @@ ${body}`
 *✅ 𝐓𝐮𝐭𝐭𝐢 𝐢 𝐰𝐚𝐫𝐧 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐩𝐨 𝐬𝐨𝐧𝐨 𝐬𝐭𝐚𝐭𝐢 𝐚𝐳𝐳𝐞𝐫𝐚𝐭𝐢.*`
     ),
     mentions,
-    footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+    footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
     buttons: [
       { buttonId: `${usedPrefix}listawarn`, buttonText: { displayText: '📋 Lista Warn' }, type: 1 }
     ],
