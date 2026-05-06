@@ -52,7 +52,7 @@ handler.before = async (m, { conn, isAdmin, isBotAdmin, isOwner, isROwner }) => 
 
 ${body}
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   if (warn >= maxWarn) {
     if (isBotAdmin) {
