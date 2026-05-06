@@ -90,7 +90,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 *❌ 𝐍𝐞𝐬𝐬𝐮𝐧 𝐝𝐚𝐭𝐨 𝐝𝐢𝐬𝐩𝐨𝐧𝐢𝐛𝐢𝐥𝐞.*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`)
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`)
   }
 
   const medaglie = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣', '6️⃣', '7️⃣', '8️⃣', '9️⃣', '🔟']
@@ -137,7 +137,7 @@ ${sottotitolo}
 
 *──────────────*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   await conn.sendMessage(m.chat, {
     text: testo,
