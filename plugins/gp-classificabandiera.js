@@ -129,7 +129,7 @@ ${sottotitolo}
 
 *──────────────*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   await conn.sendMessage(m.chat, {
     text: testo,
