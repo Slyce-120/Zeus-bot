@@ -84,7 +84,7 @@ handler.before = async function (m, { isAdmin, isOwner, isROwner }) {
 
 *⏳ 𝐑𝐢𝐩𝐫𝐨𝐯𝐚 𝐩𝐢𝐮̀ 𝐭𝐚𝐫𝐝𝐢.*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   try {
     const sent = await this.sendMessage(
