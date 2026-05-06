@@ -3,9 +3,6 @@
 import { execSync } from 'child_process'
 import fs from 'fs'
 import path from 'path'
-import { pathToFileURL } from 'url'
-
-if (!global.updateDebugErrors) global.updateDebugErrors = {}
 
 const BACKUP_DIR = path.resolve('./db-backup')
 
@@ -63,46 +60,9 @@ function createDatabaseBackup() {
   return { fileName, filePath }
 }
 
-async function testPluginImport(filePath) {
-  const fileUrl = pathToFileURL(filePath).href + `?update=${Date.now()}`
-  const mod = await import(fileUrl)
-  return mod?.default || mod
-}
-
-function createDebugId() {
-  return `dbg_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
-}
-
-let handler = async (m, { conn, command, usedPrefix }) => {
-  if (/^debugplugin$/i.test(command)) {
-    const debugId = (m.text || '').trim().split(/\s+/)[1]
-
-    if (!debugId || !global.updateDebugErrors[debugId]) {
-      return conn.reply(m.chat, '*❌ 𝐃𝐞𝐛𝐮𝐠 𝐧𝐨𝐧 𝐭𝐫𝐨𝐯𝐚𝐭𝐨 𝐨 𝐬𝐜𝐚𝐝𝐮𝐭𝐨.*', m)
-    }
-
-    const item = global.updateDebugErrors[debugId]
-
-    const fullMsg =
-`*🔧 𝐃𝐞𝐛𝐮𝐠 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐨*
-
-📄 *𝐅𝐢𝐥𝐞:* ${item.file}
-💥 *𝐌𝐞𝐬𝐬𝐚𝐠𝐠𝐢𝐨:* ${item.message}
-
-\`\`\`
-${truncate(item.stack, 3000)}
-\`\`\`
-
-> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
-
-    return conn.reply(m.chat, fullMsg, m)
-  }
-
+let handler = async (m, { conn, command }) => {
   try {
     await conn.reply(m.chat, '*🔄 𝐂𝐨𝐧𝐭𝐫𝐨𝐥𝐥𝐨 𝐚𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭𝐢...*', m)
-
-    const projectRoot = process.cwd()
-    const pluginsDir = path.join(projectRoot, 'plugins')
 
     execSync('git fetch origin', { encoding: 'utf-8' })
 
@@ -156,7 +116,6 @@ ${truncate(item.stack, 3000)}
       })
 
     let backupDone = false
-
     if (updatedFiles.length > 0) {
       createDatabaseBackup()
       backupDone = true
@@ -168,7 +127,7 @@ ${truncate(item.stack, 3000)}
 
     await sleep(1500)
 
-    let resultMsg = `*✅ 𝐀𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭𝐨 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚𝐭𝐨!*`
+    let resultMsg = `*✅ 𝐀𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭ο 𝐜𝐨𝐦𝐩𝐥𝐞𝐭𝐚𝐭𝐨!*`
 
     if (updatedFiles.length > 0) {
       resultMsg += `\n\n📦 *𝐅𝐢𝐥𝐞 𝐚𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐭𝐢:* ${updatedFiles.length}\n\n${updatedFiles.join('\n')}`
@@ -183,68 +142,6 @@ ${truncate(item.stack, 3000)}
     resultMsg += `\n\n> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
 
     await conn.reply(m.chat, truncate(resultMsg), m)
-
-    if (!fs.existsSync(pluginsDir)) {
-      await m.react('✅')
-      return
-    }
-
-    const allPlugins = fs.readdirSync(pluginsDir).filter(f => f.endsWith('.js'))
-    const pluginErrors = []
-
-    for (const file of allPlugins) {
-      const absPath = path.join(pluginsDir, file)
-
-      try {
-        await testPluginImport(absPath)
-      } catch (err) {
-        pluginErrors.push({
-          file,
-          message: err?.message || String(err),
-          stack: err?.stack || String(err)
-        })
-      }
-    }
-
-    if (pluginErrors.length > 0) {
-      for (const item of pluginErrors) {
-        const debugId = createDebugId()
-
-        global.updateDebugErrors[debugId] = {
-          ...item,
-          createdAt: Date.now()
-        }
-
-        const shortMsg =
-`*❌ 𝐄𝐫𝐫𝐨𝐫𝐞 𝐧𝐞𝐥 𝐩𝐥𝐮𝐠𝐢𝐧*
-
-📄 *𝐅𝐢𝐥𝐞:* ${item.file}
-💥 *𝐌𝐞𝐬𝐬𝐚𝐠𝐠𝐢𝐨:* ${item.message}
-
-> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
-
-        await conn.sendMessage(m.chat, {
-          text: shortMsg,
-          footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
-          buttons: [
-            {
-              buttonId: `${usedPrefix}debugplugin ${debugId}`,
-              buttonText: { displayText: '🔧 Debug completo' },
-              type: 1
-            }
-          ],
-          headerType: 1
-        }, { quoted: m })
-
-        if (pluginErrors.length > 1) {
-          await sleep(1200)
-        }
-      }
-
-      await m.react('⚠️')
-      return
-    }
-
     await m.react('✅')
 
   } catch (err) {
@@ -257,9 +154,9 @@ ${truncate(item.stack, 3000)}
   }
 }
 
-handler.help = ['aggiorna', 'debugplugin <id>']
+handler.help = ['aggiorna']
 handler.tags = ['owner']
-handler.command = /^(aggiorna|update|aggiornabot|debugplugin)$/i
+handler.command = /^(aggiorna|update|aggiornabot)$/i
 handler.owner = true
 
 export default handler
