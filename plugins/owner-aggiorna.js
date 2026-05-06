@@ -145,7 +145,25 @@ ${truncate(item.stack, 3000)}
           const stats = statMap[oldPath] || { plus: 0, minus: 0 }
           return `✅ ${oldPath} (+${stats.plus}/-${stats.minus})`
         }
-a
+
+        if (status === 'D') {
+          const stats = statMap[oldPath] || { plus: 0, minus: 0 }
+          return `❌ ${oldPath} (+${stats.plus}/-${stats.minus})`
+        }
+
+        const stats = statMap[oldPath] || { plus: 0, minus: 0 }
+        return `📄 ${oldPath} (+${stats.plus}/-${stats.minus})`
+      })
+
+    let backupDone = false
+
+    if (updatedFiles.length > 0) {
+      createDatabaseBackup()
+      backupDone = true
+    }
+
+    execSync('git reset --hard origin/main && git pull', {
+      encoding: 'utf-8'
     })
 
     await sleep(1500)
@@ -171,6 +189,35 @@ a
       return
     }
 
+    const allPlugins = fs.readdirSync(pluginsDir).filter(f => f.endsWith('.js'))
+    const pluginErrors = []
+
+    for (const file of allPlugins) {
+      const absPath = path.join(pluginsDir, file)
+
+      try {
+        await testPluginImport(absPath)
+      } catch (err) {
+        pluginErrors.push({
+          file,
+          message: err?.message || String(err),
+          stack: err?.stack || String(err)
+        })
+      }
+    }
+
+    if (pluginErrors.length > 0) {
+      for (const item of pluginErrors) {
+        const debugId = createDebugId()
+
+        global.updateDebugErrors[debugId] = {
+          ...item,
+          createdAt: Date.now()
+        }
+
+        const shortMsg =
+`*❌ 𝐄𝐫𝐫𝐨𝐫𝐞 𝐧𝐞𝐥 𝐩𝐥𝐮𝐠𝐢𝐧*
+
 📄 *𝐅𝐢𝐥𝐞:* ${item.file}
 💥 *𝐌𝐞𝐬𝐬𝐚𝐠𝐠𝐢𝐨:* ${item.message}
 
@@ -178,13 +225,36 @@ a
 
         await conn.sendMessage(m.chat, {
           text: shortMsg,
-          footer: 'Zeus',
+          footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
           buttons: [
             {
               buttonId: `${usedPrefix}debugplugin ${debugId}`,
               buttonText: { displayText: '🔧 Debug completo' },
               type: 1
-         
+            }
+          ],
+          headerType: 1
+        }, { quoted: m })
+
+        if (pluginErrors.length > 1) {
+          await sleep(1200)
+        }
+      }
+
+      await m.react('⚠️')
+      return
+    }
+
+    await m.react('✅')
+
+  } catch (err) {
+    await conn.reply(
+      m.chat,
+      `*❌ 𝐄𝐫𝐫𝐨𝐫𝐞 𝐝𝐮𝐫𝐚𝐧𝐭𝐞 𝐚𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭𝐨:*\n\n${err.message}\n\n> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`,
+      m
+    )
+    await m.react('❌')
+  }
 }
 
 handler.help = ['aggiorna', 'debugplugin <id>']
