@@ -27,7 +27,7 @@ global.wm        = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
 global.autore    = 'ℨ𝔢𝔲𝔰'
 global.dev       = 'ℨ𝔢𝔲𝔰'
 global.versione  = pkg.version
-global.testobot  = ZEUS-CORE-V${pkg.version}`
+global.testobot  = `ZEUS-CORE-V${pkg.version}`
 global.errore    = '⚠️ *[SYSTEM ERROR]* Usa `.segnala` per inviare il log allo staff.'
 
 global.repobot   = 'https://github.com/Slyce-120/Zeus-bot.git'
