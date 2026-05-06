@@ -29,7 +29,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   }
 
   const text = `╭━━━━━━━⚙️━━━━━━━╮
-*✦ 𝐀𝐗𝐈𝐎𝐍 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈 ✦*
+*✦ ℤ𝕖𝕦𝕤 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈 ✦*
 ╰━━━━━━━⚙️━━━━━━━╯
 
 *🛡️ 𝐒𝐢𝐜𝐮𝐫𝐞𝐳𝐳𝐚*
@@ -77,7 +77,7 @@ await conn.sendMessage(m.chat, {
     ...(global.rcanal?.contextInfo || {}),
     ...(thumbnail ? {
       externalAdReply: {
-        title: '𝐀𝐗𝐈𝐎𝐍 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈',
+        title: 'ℤ𝕖𝕦𝕤 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈',
         body: 'Stato moduli del sistema',
         thumbnail,
         mediaType: 1,
