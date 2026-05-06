@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 ${body}
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   if (u.isJailed && command !== 'evadi' && command !== 'cauzione') {
     const tempoRimanente = u.jailTime - Date.now()
