@@ -93,7 +93,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 ${truncate(item.stack, 3000)}
 \`\`\`
 
-> 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓`
+> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
 
     return conn.reply(m.chat, fullMsg, m)
   }
@@ -180,7 +180,7 @@ ${truncate(item.stack, 3000)}
       resultMsg += `\n\n✅ *𝐁𝐚𝐜𝐤𝐮𝐩 𝐃𝐁 𝐞𝐬𝐞𝐠𝐮𝐢𝐭𝐨 𝐜𝐨𝐫𝐫𝐞𝐭𝐭𝐚𝐦𝐞𝐧𝐭𝐞*`
     }
 
-    resultMsg += `\n\n> 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓`
+    resultMsg += `\n\n> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
 
     await conn.reply(m.chat, truncate(resultMsg), m)
 
@@ -221,7 +221,7 @@ ${truncate(item.stack, 3000)}
 📄 *𝐅𝐢𝐥𝐞:* ${item.file}
 💥 *𝐌𝐞𝐬𝐬𝐚𝐠𝐠𝐢𝐨:* ${item.message}
 
-> 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓`
+> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`
 
         await conn.sendMessage(m.chat, {
           text: shortMsg,
@@ -250,7 +250,7 @@ ${truncate(item.stack, 3000)}
   } catch (err) {
     await conn.reply(
       m.chat,
-      `*❌ 𝐄𝐫𝐫𝐨𝐫𝐞 𝐝𝐮𝐫𝐚𝐧𝐭𝐞 𝐚𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭𝐨:*\n\n${err.message}\n\n> 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓`,
+      `*❌ 𝐄𝐫𝐫𝐨𝐫𝐞 𝐝𝐮𝐫𝐚𝐧𝐭𝐞 𝐚𝐠𝐠𝐢𝐨𝐫𝐧𝐚𝐦𝐞𝐧𝐭𝐨:*\n\n${err.message}\n\n> ℤ𝕖𝕦𝕤 𝔹𝕠𝕥`,
       m
     )
     await m.react('❌')
