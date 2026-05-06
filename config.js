@@ -21,13 +21,13 @@ global.owner = [
 global.mods = ['xxxxxxxxxx', 'xxxxxxxxxx']
 global.prems = ['xxxxxxxxxx', 'xxxxxxxxxx']
 
-global.nomebot   = '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
-global.nomepack  = '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
-global.wm        = '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
-global.autore    = '𝕯𝖊ⱥ𝖉𝖑𝐲'
-global.dev       = '𝕯𝖊ⱥ𝖉𝖑𝐲'
+global.nomebot   = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
+global.nomepack  = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
+global.wm        = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
+global.autore    = 'ℨ𝔢𝔲𝔰'
+global.dev       = 'ℨ𝔢𝔲𝔰'
 global.versione  = pkg.version
-global.testobot  = `AXION-CORE-V${pkg.version}`
+global.testobot  = ZEUS-CORE-V${pkg.version}`
 global.errore    = '⚠️ *[SYSTEM ERROR]* Usa `.segnala` per inviare il log allo staff.'
 
 global.repobot   = 'https://github.com/axion-bot/axion-bot'
