@@ -64,7 +64,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isDio, isR
 *⚠️ ${reason}*
 *❌ 𝐍𝐨𝐧 𝐩𝐨𝐬𝐬𝐨 𝐫𝐢𝐦𝐮𝐨𝐯𝐞𝐫𝐥𝐨: 𝐢𝐥 𝐛𝐨𝐭 𝐧𝐨𝐧 è 𝐚𝐝𝐦𝐢𝐧*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [m.sender]
     }, { quoted: m })
 
@@ -95,7 +95,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, isDio, isR
 *@${senderTag}*
 *⚠️ 𝐃𝐨𝐯𝐫𝐞𝐛𝐛𝐞 𝐞𝐬𝐬𝐞𝐫𝐞 𝐫𝐢𝐦𝐨𝐬𝐬𝐨, 𝐦𝐚 𝐢𝐥 𝐛𝐨𝐭 𝐧𝐨𝐧 è 𝐫𝐢𝐮𝐬𝐜𝐢𝐭𝐨 𝐚 𝐟𝐚𝐫𝐥𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [m.sender]
     }, { quoted: m })
   }
