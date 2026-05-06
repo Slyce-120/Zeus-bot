@@ -9,7 +9,7 @@ ${usedPrefix + command} Descrizione | Link GitHub`)
     let [desc, git] = text.split('|').map(v => v.trim())
     if (!desc) return m.reply(`*❌ Inserisci almeno una descrizione!*`)
 
-    const botName = '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
+    const botName = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
     m.reply('🌌 *ACCESSO OWNER AUTORIZZATO.*\nGenerazione portale eterno in corso...')
 
     let githubSection = git ? `
@@ -44,7 +44,7 @@ ${usedPrefix + command} Descrizione | Link GitHub`)
 </head>
 <body>
     <header>
-        <h1>𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓</h1>
+        <h1>ℤ𝕖𝕦𝕤 𝔹𝕠𝕥</h1>
         <p style="color: var(--accent); letter-spacing: 3px;">STAZIONE DI CONTROLLO OPERATIVA</p>
     </header>
     <div class="container">
@@ -76,7 +76,7 @@ ${usedPrefix + command} Descrizione | Link GitHub`)
         
         const eternalLink = 'https://telegra.ph' + response.data[0].src
 
-        let linkMsg = `🛸 *𝛥𝐗𝐈𝚶𝐍 𝐄𝐓𝐄𝐑𝐍𝐀𝐋 𝐏𝐎𝐑𝐓𝐀𝐋*\n\n`
+        let linkMsg = `🛸 *ℤ𝕖𝕦𝕤 𝐄𝐓𝐄𝐑𝐍𝐀𝐋 𝐏𝐎𝐑𝐓𝐀𝐋*\n\n`
         linkMsg += `🌐 *Link Sito:* ${eternalLink}\n`
         linkMsg += `♾️ *Durata:* Permanente\n`
         linkMsg += `🛡️ *Privilegi:* Solo Owner\n\n`
