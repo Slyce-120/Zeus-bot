@@ -53,7 +53,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 *🏷️ 𝐆𝐫𝐮𝐩𝐩𝐨:* ${nomeGruppo}
 *👥 𝐓𝐨𝐭𝐚𝐥𝐞 𝐠𝐫𝐮𝐩𝐩𝐨:* *${formatNumber(totaleOggi)} 𝐦𝐞𝐬𝐬𝐚𝐠𝐠𝐢*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`
 
   await conn.sendMessage(m.chat, {
     text,
