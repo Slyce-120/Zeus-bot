@@ -12,11 +12,11 @@ const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf-8'))
 const moduleCache = new NodeCache({ stdTTL: 300 });
 
 global.owner = [
-  ['393762257368', 'jack', true],
-  ['12368910153', 'slyce', true],
-  ['', '', true],
-  ['', '', true],
-  ['', '', true],
+  ['393780306700', '𝕯𝖊ⱥ𝖉𝖑𝐲', true],
+  ['393780560229', 'Luxifer', true],
+  ['639350468907', 'bonzino', true],
+  ['393780087063', 'bonzino²', true],
+  ['393509594333', 'deadly2', true],
 ]
 global.mods = ['xxxxxxxxxx', 'xxxxxxxxxx']
 global.prems = ['xxxxxxxxxx', 'xxxxxxxxxx']
@@ -66,10 +66,10 @@ let fileUrl = pathToFileURL(filePath).href
 const reloadConfig = async () => {
   const cached = moduleCache.get(fileUrl);
   if (cached) return cached;
-  
+
   unwatchFile(filePath)
   console.log(chalk.bgCyan.black(" SYSTEM ") + chalk.cyan(` File 'config.js' aggiornato con successo.`))
-  
+
   const module = await import(`${fileUrl}?update=${Date.now()}`)
   moduleCache.set(fileUrl, module, { ttl: 300 });
   return module;
