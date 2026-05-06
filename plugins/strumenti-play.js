@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 
     if (command === 'play') {
         let infoMsg = `┏━━━━━━━━━━━━━━━━━━━┓\n` +
-                      `   🎧  *𝙋𝙡𝙖𝙮 𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓* 🎧\n` +
+                      `   🎧  *𝙋𝙡𝙖𝙮 ℤ𝕖𝕦𝕤 𝔹𝕠𝕥* 🎧\n` +
                       `┗━━━━━━━━━━━━━━━━━━━┛\n\n` +
                       `◈ 📌 *𝗧𝗶𝘁𝗼𝗹𝗼:* ${vid.title}\n` +
                       `◈ ⏱️ *𝗗𝘂𝗿𝗮𝘁𝗮:* ${vid.timestamp}\n\n` +
