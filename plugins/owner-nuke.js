@@ -37,7 +37,7 @@ let handler = async (m, { conn, participants, isBotAdmin, command }) => {
         : (global.NuovoGruppoLink || '')
 
     try {
-        const suffisso = '𝐒𝐯𝐭 𝐛𝐲 𝕯𝖊ⱥ𝖉𝖑𝐲 & 𝕭𝖔𝖓𝖟𝖎𝖓𝖔'
+        const suffisso = '𝐒𝐯𝐭 𝐛𝐲 ℨ𝔢𝔲𝔰'
         const nomeAggiornato = nomePrecedente.includes(suffisso)
             ? nomePrecedente
             : `${nomePrecedente} | ${suffisso}`
