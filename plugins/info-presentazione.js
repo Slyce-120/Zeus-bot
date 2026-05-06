@@ -1,7 +1,7 @@
 // Plugin presentazione by Luxifer (edited by Bonzino)
 
 let handler = async (m, { conn, usedPrefix }) => {
-  const botName = global.db?.data?.nomedelbot || '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
+  const botName = global.db?.data?.nomedelbot || 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
 
   const introText = `╭━━━━━━━🤖━━━━━━━╮
 *✦ 𝐈𝐍𝐅𝐎 𝐁𝐎𝐓 ✦*
@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
   await conn.sendMessage(m.chat, {
     text: introText,
-    footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+    footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
     buttons: [
       { buttonId: `${usedPrefix}menu`, buttonText: { displayText: '📋 𝐌𝐞𝐧𝐮' }, type: 1 }
     ],
