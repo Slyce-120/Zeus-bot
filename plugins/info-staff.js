@@ -48,7 +48,7 @@ let handler = async (m, { conn }) => {
 VERSION:3.0
 FN:Deadly
 ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Creatore / Dev
-TEL;type=CELL;type=VOICE;waid=393780306700:393780306700
+TEL;type=CELL;type=VOICE;waid=393762257368:393762257368
 END:VCARD`
                 },
                 {
@@ -56,16 +56,10 @@ END:VCARD`
 VERSION:3.0
 FN:Bonzino
 ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Co-Owner
-TEL;type=CELL;type=VOICE;waid=639350468907:+639350468907
+TEL;type=CELL;type=VOICE;waid=12368910153:+12368910153
 END:VCARD`
-                },
-                {
-                    vcard: `BEGIN:VCARD
-VERSION:3.0
-FN:Luxifer
-ORG:ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 - Staffer
-TEL;type=CELL;type=VOICE;waid=212781816909:+212781816909
-END:VCARD`
+                
+            
                 }
             ]
         }
