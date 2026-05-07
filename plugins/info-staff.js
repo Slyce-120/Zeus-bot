@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
     let staff = `*⋆｡˚✦『 𝐒𝐓𝐀𝐅𝐅 ℤ𝕖𝕦𝕤 𝔹𝕠𝕥 』✦˚｡⋆*
 
 *╭───────────────╮*
-*│ 🤖 𝐁𝐨𝐭:* ${global.ℤ𝕖𝕦𝕤}
+*│ 🤖 𝐁𝐨𝐭:* ${global.name}
 *│ 🆚 𝐕𝐞𝐫𝐬𝐢𝐨𝐧𝐞:* ${global.versione}
 *╰───────────────╯*
 
