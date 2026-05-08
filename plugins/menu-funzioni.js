@@ -62,7 +62,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
 await conn.sendMessage(m.chat, {
   text,
-  footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+  footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
   buttons: [
     {
       buttonId: `${usedPrefix}menu`,
