@@ -81,7 +81,7 @@ export async function before(m, { conn, isOwner, isROwner }) {
 *📱 𝐃𝐢𝐬𝐩𝐨𝐬𝐢𝐭𝐢𝐯𝐨:* *${device.toUpperCase()}*
 *📌 𝐌𝐨𝐭𝐢𝐯𝐨:* *𝐂𝐥𝐢𝐞𝐧𝐭 / 𝐁𝐨𝐭 𝐬𝐨𝐬𝐩𝐞𝐭𝐭𝐨*
 
-> *𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓*`,
+> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*`,
       mentions: [m.sender]
     }, { quoted: m })
   } catch (e) {
