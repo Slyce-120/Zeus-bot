@@ -104,7 +104,7 @@ let handler = async (m, { conn, text }) => {
     } catch {}
 
     let packname = nomeUtente
-    let author = '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓'
+    let author = 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥'
 
     if (S(text).trim()) {
       if (text.includes('|')) {
