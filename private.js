@@ -1,1 +1,1 @@
-global.NuovoGruppoLink = 'https://chat.whatsapp.com/CUMqocujk3FIQ6AXC9fonl '
+global.NuovoGruppoLink = 'https://whatsapp.com/channel/0029Vb8MQ3U1CYoMEtU1832d '
