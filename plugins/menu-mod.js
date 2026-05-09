@@ -31,6 +31,7 @@ const handler = async (message, { conn, usedPrefix = '.' }) => {
 `.trim()
 
   await conn.sendMessage(message.chat, {
+    image: { url: './media/main-menu.jpg' },
     text: menuBody,
     mentions: [userId],
     footer: '> *ℤ𝕖𝕦𝕤 𝔹𝕠𝕥*',
