@@ -46,7 +46,7 @@ ${desc}`
 *🛡️ 𝐒𝐢𝐜𝐮𝐫𝐞𝐳𝐳𝐚:*
 *antilink, antispam, antibot*
 *antiporno, antigore, antitrava*
-*antitag, antiprivato, antimedia, antinuke*
+*antitag, antiprivato, antimedia, antinuke, *antiwz,*
 
 *📱 𝐑𝐞𝐭𝐞:*
 *antiinsta, antitelegram, antitiktok*
@@ -173,6 +173,18 @@ ${desc}`
       result = box('𝐀𝐍𝐓𝐈 𝐁𝐎𝐓', `*${isEnable ? '✅' : '❌'} 𝐁𝐥𝐨𝐜𝐜𝐨 𝐚𝐥𝐭𝐫𝐢 𝐛𝐨𝐭 ${isEnable ? '𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨' : '𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨'}*`)
       break
 
+case 'antiwhatsapp':
+    case 'antiwz':
+    case 'antiwa':
+      requireAdmin()
+      chat.antiWhatsapp = isEnable
+      thumbFeature = 'antiwhatsapp'
+      result = box(
+        '𝐀𝐍𝐓𝐈 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏',
+        `*${isEnable ? '✅' : '❌'} 𝐅𝐢𝐥𝐭𝐫𝐨 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 ${isEnable ? '𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨' : '𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨'}*`
+      )
+      break
+
     case 'antispam':
       requireAdmin()
       chat.antispam = isEnable
@@ -184,7 +196,7 @@ ${desc}`
       chat.antitrava = isEnable
       result = box('𝐀𝐍𝐓𝐈 𝐓𝐑𝐀𝐕𝐀', `*${isEnable ? '✅' : '❌'} 𝐅𝐢𝐥𝐭𝐫𝐨 𝐭𝐞𝐬𝐭𝐨 𝐭𝐫𝐚𝐯𝐚 ${isEnable ? '𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨' : '𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐨'}*`)
       break
-      
+
       case 'antinuke':
        requireAdmin()
        chat.antinuke = isEnable
@@ -192,7 +204,7 @@ ${desc}`
        result = box(  '𝐀𝐍𝐓𝐈 𝐍𝐔𝐊𝐄',    `*${isEnable ? '✅' : '❌'} 𝐏𝐫𝐨𝐭𝐞𝐳𝐢𝐨𝐧𝐞 𝐧𝐮𝐤𝐞 ${isEnable ? '𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚' : '𝐝𝐢𝐬𝐚𝐭𝐭𝐢𝐯𝐚𝐭𝐚'}*`
   )
   break
-  
+
   default:
   result = box(
     '𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐄 𝐈𝐍𝐄𝐒𝐈𝐒𝐓𝐄𝐍𝐓𝐄',
