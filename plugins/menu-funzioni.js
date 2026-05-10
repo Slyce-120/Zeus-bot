@@ -1,4 +1,4 @@
-// memu funzioni by Bonzino
+// menu funzioni by Bonzino
 
 import fs from 'fs'
 import fetch from 'node-fetch'
