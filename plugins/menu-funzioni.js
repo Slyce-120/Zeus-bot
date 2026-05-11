@@ -72,7 +72,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     m.chat,
     {
       text,
-      footer: '𝛥𝐗𝐈𝚶𝐍 𝚩𝚯𝐓',
+      footer: 'ℤ𝕖𝕦𝕤 𝔹𝕠𝕥',
       buttons: [
         {
           buttonId: `${usedPrefix}menu`,
@@ -88,7 +88,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         ...(thumbnail
           ? {
               externalAdReply: {
-                title: '𝐀𝐗𝐈𝐎𝐍 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈',
+                title: 'ℤ𝕖𝕦𝕤 𝐅𝐔𝐍𝐙𝐈𝐎𝐍𝐈',
                 body: 'Stato moduli del sistema',
                 thumbnail,
                 mediaType: 1,
