@@ -1,5 +1,7 @@
 // Enable by Bonzino
 
+import { getThumbBuffer } from '../lib/thumb.js'
+
 let handler = async (m, { conn, command, args, isAdmin, isOwner, isROwner, usedPrefix }) => {
   const isEnable = /^(attiva|enable|1)$/i.test(command)
 
